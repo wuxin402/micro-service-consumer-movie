@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    database: mysql
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: false
+  dataSource:
+    url: jdbc:mysql://localhost:3306/wuxin?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+    username: root
+    password: zhouyuan
+    driver-class-name: com.mysql.jdbc.Driver
